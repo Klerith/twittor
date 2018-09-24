@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Twittor</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Android -->
+    <meta name="theme-color" content="#3498db">
+
+
+</head>
+<body>
+        <!-- Titulo -->
+        <span class="first"> 
+            <span id="salir-btn" class="fa fa-sign-out-alt out oculto animated fadeIn"></span>
+            <span id="titulo">
+                <i class="fa fa-user"></i>
+                Seleccione Personaje
+            </span>
+            <span id="nuevo-btn" class="fa fa-pen-square new oculto animated fadeIn fast"></span>
+        </span>
+        <!-- Fin Titulo -->
+
+        <!-- Modal -->
+        <div id="modal" class="oculto">
+            <img id="modal-avatar" src="img/avatars/spiderman.jpg">
+
+            <span class="first"> 
+                <span id="titulo-modal">Nuevo mensaje</span>
+                <span id="cancel-btn" class="fa fa-times"></span>
+            </span>
+            
+
+            <div class="nuevo-mensaje">
+                <textarea id="txtMensaje" placeholder="Nuevo mensaje..." rows="5"></textarea>
+            </div>
+
+            
+            <!-- boton de enviar -->
+
+            <div id="post-btn" class="fab">
+                <i class="fa fa-paper-plane"></i>
+            </div>
+
+            <div id="post-btn" class="fab-marker">
+                <i class="fa fa-map-marker-alt"></i>
+            </div>
+
+            <div id="post-btn" class="fab-photo">
+                <i class="fa fa-image"></i>
+            </div>
+
+        </div>
+        <!-- Fin Modal -->
+
+
+        <!-- Seleccion de personaje -->
+        <div id="seleccion" class="seleccion animated fadeIn fast" align="center">
+        
+            <div>
+                <img data-user="spiderman" src="img/avatars/spiderman.jpg" alt="spiderman" class="seleccion-avatar">
+            </div>
+
+            <div>
+                <img data-user="ironman" src="img/avatars/ironman.jpg" alt="ironman" class="seleccion-avatar">
+            </div>
+
+            <div>
+                <img data-user="wolverine" src="img/avatars/wolverine.jpg" alt="wolverine" class="seleccion-avatar">
+            </div>
+
+            <div>
+                <img data-user="thor" src="img/avatars/thor.jpg" alt="thor" class="seleccion-avatar">
+            </div>
+
+            <div>
+                <img data-user="hulk" src="img/avatars/hulk.jpg" alt="hulk" class="seleccion-avatar">
+            </div>
+
+        </div>
+
+        <!-- FIN Seleccion de personaje -->
+
+        <!-- Lista de mensajes -->
+        <ul id="timeline" class="timeline oculto">
+            
+            <!-- Mensaje -->
+            <li class="animated fadeIn fast">
+                <div class="avatar">
+                    <img src="img/avatars/spiderman.jpg">
+                </div>
+                <div class="bubble-container">
+                    <div class="bubble">
+                        <h3>@spiderman</h3>
+                        <br/>
+                        La tía May, hizo unos panqueques en forma de ironman!
+                    </div>
+                    
+                    <div class="arrow"></div>
+                </div>
+            </li>
+            <!-- Fin del mensaje -->
+
+        </ul>
+        <!-- Fin Lista de mensajes -->
+
+
+      
+    
+        <script src="js/libs/jquery.js"></script>
+        <script src="js/app.js"></script>
+    
+</body>
+</html>
